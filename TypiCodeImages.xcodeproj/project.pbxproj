@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
 		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
-		48AB96432240163100CBD657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96412240163100CBD657 /* Main.storyboard */; };
-		48AB96452240163200CBD657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Assets.xcassets */; };
-		48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96462240163200CBD657 /* LaunchScreen.storyboard */; };
+		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
 		48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */; };
 		48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */; };
+		48AB966E22401B1500CBD657 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966D22401B1500CBD657 /* Image.swift */; };
+		48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966F22401CB700CBD657 /* NetworkProtocol.swift */; };
+		48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */; };
+		48AB96802240389200CBD657 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96822240389200CBD657 /* Localizable.strings */; };
+		48AB96852240397D00CBD657 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96832240397C00CBD657 /* Strings.swift */; };
+		48AB96862240397D00CBD657 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96842240397D00CBD657 /* Images.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
 		7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
@@ -43,9 +47,7 @@
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48AB96422240163100CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		48AB96442240163200CBD657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		48AB96472240163200CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48AB96442240163200CBD657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48AB96492240163200CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesTests.swift; sourceTree = "<group>"; };
@@ -53,6 +55,12 @@
 		48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesUITests.swift; sourceTree = "<group>"; };
 		48AB965F2240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AB966D22401B1500CBD657 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		48AB966F22401CB700CBD657 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesError.swift; sourceTree = "<group>"; };
+		48AB96812240389200CBD657 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		48AB96832240397C00CBD657 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		48AB96842240397D00CBD657 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,11 +122,12 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				48AB96772240378D00CBD657 /* Resources */,
+				48AB96712240239800CBD657 /* Error */,
+				48AB966C22401AB800CBD657 /* Networking */,
+				48AB966B22401A9900CBD657 /* Model */,
 				48AB963D2240163000CBD657 /* AppDelegate.swift */,
 				48AB963F2240163000CBD657 /* ViewController.swift */,
-				48AB96412240163100CBD657 /* Main.storyboard */,
-				48AB96442240163200CBD657 /* Assets.xcassets */,
-				48AB96462240163200CBD657 /* LaunchScreen.storyboard */,
 				48AB96492240163200CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImages;
@@ -140,6 +149,49 @@
 				48AB965F2240163300CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImagesUITests;
+			sourceTree = "<group>";
+		};
+		48AB966B22401A9900CBD657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48AB966D22401B1500CBD657 /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48AB966C22401AB800CBD657 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48AB966F22401CB700CBD657 /* NetworkProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		48AB96712240239800CBD657 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		48AB96772240378D00CBD657 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96442240163200CBD657 /* Images.xcassets */,
+				48AB9678224037A000CBD657 /* Generated */,
+				48AB96822240389200CBD657 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48AB9678224037A000CBD657 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96842240397D00CBD657 /* Images.swift */,
+				48AB96832240397C00CBD657 /* Strings.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		8E806DB8A4D84B1B99050538 /* Frameworks */ = {
@@ -173,6 +225,8 @@
 			buildConfigurationList = 48AB96622240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImages" */;
 			buildPhases = (
 				777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */,
+				48AB96752240245000CBD657 /* Swiftgen */,
+				48AB96742240243400CBD657 /* Swiftlint */,
 				48AB96362240163000CBD657 /* Sources */,
 				48AB96372240163000CBD657 /* Frameworks */,
 				48AB96382240163000CBD657 /* Resources */,
@@ -275,9 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */,
-				48AB96452240163200CBD657 /* Assets.xcassets in Resources */,
-				48AB96432240163100CBD657 /* Main.storyboard in Resources */,
+				48AB96802240389200CBD657 /* Localizable.strings in Resources */,
+				48AB96452240163200CBD657 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +421,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		48AB96742240243400CBD657 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		48AB96752240245000CBD657 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/swiftgen.sh\"\n";
+		};
 		75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,8 +532,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48AB96862240397D00CBD657 /* Images.swift in Sources */,
+				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
 				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
+				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
+				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
+				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,20 +574,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48AB96412240163100CBD657 /* Main.storyboard */ = {
+		48AB96822240389200CBD657 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				48AB96422240163100CBD657 /* Base */,
+				48AB96812240389200CBD657 /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		48AB96462240163200CBD657 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48AB96472240163200CBD657 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
