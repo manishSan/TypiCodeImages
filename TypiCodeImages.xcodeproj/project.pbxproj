@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
+		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
+		48AB96432240163100CBD657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96412240163100CBD657 /* Main.storyboard */; };
+		48AB96452240163200CBD657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Assets.xcassets */; };
+		48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96462240163200CBD657 /* LaunchScreen.storyboard */; };
+		48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */; };
+		48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */; };
+		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
+		7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */; };
+		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48AB964F2240163300CBD657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AB96322240163000CBD657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48AB96392240163000CBD657;
+			remoteInfo = TypiCodeImages;
+		};
+		48AB965A2240163300CBD657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AB96322240163000CBD657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48AB96392240163000CBD657;
+			remoteInfo = TypiCodeImages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD78B3DEC87BA8046614844 /* Pods-TypiCodeImagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48AB96422240163100CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48AB96442240163200CBD657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48AB96472240163200CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48AB96492240163200CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesTests.swift; sourceTree = "<group>"; };
+		48AB96542240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesUITests.swift; sourceTree = "<group>"; };
+		48AB965F2240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
+		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
+		9C028E5DBC63AE14CC2D190F /* Pods-TypiCodeImagesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48AB96372240163000CBD657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB964B2240163300CBD657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB96562240163300CBD657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48AB96312240163000CBD657 = {
+			isa = PBXGroup;
+			children = (
+				48AB963C2240163000CBD657 /* TypiCodeImages */,
+				48AB96512240163300CBD657 /* TypiCodeImagesTests */,
+				48AB965C2240163300CBD657 /* TypiCodeImagesUITests */,
+				48AB963B2240163000CBD657 /* Products */,
+				C39150E3AA4DF568E7EA3EBC /* Pods */,
+				8E806DB8A4D84B1B99050538 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48AB963B2240163000CBD657 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AB963A2240163000CBD657 /* TypiCodeImages.app */,
+				48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */,
+				48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
+			isa = PBXGroup;
+			children = (
+				48AB963D2240163000CBD657 /* AppDelegate.swift */,
+				48AB963F2240163000CBD657 /* ViewController.swift */,
+				48AB96412240163100CBD657 /* Main.storyboard */,
+				48AB96442240163200CBD657 /* Assets.xcassets */,
+				48AB96462240163200CBD657 /* LaunchScreen.storyboard */,
+				48AB96492240163200CBD657 /* Info.plist */,
+			);
+			path = TypiCodeImages;
+			sourceTree = "<group>";
+		};
+		48AB96512240163300CBD657 /* TypiCodeImagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */,
+				48AB96542240163300CBD657 /* Info.plist */,
+			);
+			path = TypiCodeImagesTests;
+			sourceTree = "<group>";
+		};
+		48AB965C2240163300CBD657 /* TypiCodeImagesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */,
+				48AB965F2240163300CBD657 /* Info.plist */,
+			);
+			path = TypiCodeImagesUITests;
+			sourceTree = "<group>";
+		};
+		8E806DB8A4D84B1B99050538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */,
+				E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */,
+				363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C39150E3AA4DF568E7EA3EBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */,
+				6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */,
+				0DD78B3DEC87BA8046614844 /* Pods-TypiCodeImagesTests.debug.xcconfig */,
+				69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */,
+				0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */,
+				9C028E5DBC63AE14CC2D190F /* Pods-TypiCodeImagesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48AB96392240163000CBD657 /* TypiCodeImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48AB96622240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImages" */;
+			buildPhases = (
+				777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */,
+				48AB96362240163000CBD657 /* Sources */,
+				48AB96372240163000CBD657 /* Frameworks */,
+				48AB96382240163000CBD657 /* Resources */,
+				B55CEE7A5F5FE0386B84946E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TypiCodeImages;
+			productName = TypiCodeImages;
+			productReference = 48AB963A2240163000CBD657 /* TypiCodeImages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48AB964D2240163300CBD657 /* TypiCodeImagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48AB96652240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesTests" */;
+			buildPhases = (
+				34D9AC2BC4954648FD131AFC /* [CP] Check Pods Manifest.lock */,
+				48AB964A2240163300CBD657 /* Sources */,
+				48AB964B2240163300CBD657 /* Frameworks */,
+				48AB964C2240163300CBD657 /* Resources */,
+				18064C016857A9ED87AE128E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48AB96502240163300CBD657 /* PBXTargetDependency */,
+			);
+			name = TypiCodeImagesTests;
+			productName = TypiCodeImagesTests;
+			productReference = 48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48AB96582240163300CBD657 /* TypiCodeImagesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */;
+			buildPhases = (
+				75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */,
+				48AB96552240163300CBD657 /* Sources */,
+				48AB96562240163300CBD657 /* Frameworks */,
+				48AB96572240163300CBD657 /* Resources */,
+				06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48AB965B2240163300CBD657 /* PBXTargetDependency */,
+			);
+			name = TypiCodeImagesUITests;
+			productName = TypiCodeImagesUITests;
+			productReference = 48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48AB96322240163000CBD657 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Sanwal;
+				TargetAttributes = {
+					48AB96392240163000CBD657 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					48AB964D2240163300CBD657 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 48AB96392240163000CBD657;
+					};
+					48AB96582240163300CBD657 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 48AB96392240163000CBD657;
+					};
+				};
+			};
+			buildConfigurationList = 48AB96352240163000CBD657 /* Build configuration list for PBXProject "TypiCodeImages" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48AB96312240163000CBD657;
+			productRefGroup = 48AB963B2240163000CBD657 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48AB96392240163000CBD657 /* TypiCodeImages */,
+				48AB964D2240163300CBD657 /* TypiCodeImagesTests */,
+				48AB96582240163300CBD657 /* TypiCodeImagesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48AB96382240163000CBD657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */,
+				48AB96452240163200CBD657 /* Assets.xcassets in Resources */,
+				48AB96432240163100CBD657 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB964C2240163300CBD657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB96572240163300CBD657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18064C016857A9ED87AE128E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D9AC2BC4954648FD131AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TypiCodeImagesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TypiCodeImagesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TypiCodeImages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55CEE7A5F5FE0386B84946E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48AB96362240163000CBD657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
+				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB964A2240163300CBD657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48AB96552240163300CBD657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48AB96502240163300CBD657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
+			targetProxy = 48AB964F2240163300CBD657 /* PBXContainerItemProxy */;
+		};
+		48AB965B2240163300CBD657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
+			targetProxy = 48AB965A2240163300CBD657 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48AB96412240163100CBD657 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48AB96422240163100CBD657 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48AB96462240163200CBD657 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48AB96472240163200CBD657 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48AB96602240163300CBD657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48AB96612240163300CBD657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48AB96632240163300CBD657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48AB96642240163300CBD657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48AB96662240163300CBD657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD78B3DEC87BA8046614844 /* Pods-TypiCodeImagesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypiCodeImages.app/TypiCodeImages";
+			};
+			name = Debug;
+		};
+		48AB96672240163300CBD657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypiCodeImages.app/TypiCodeImages";
+			};
+			name = Release;
+		};
+		48AB96692240163300CBD657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypiCodeImages;
+			};
+			name = Debug;
+		};
+		48AB966A2240163300CBD657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C028E5DBC63AE14CC2D190F /* Pods-TypiCodeImagesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypiCodeImages;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48AB96352240163000CBD657 /* Build configuration list for PBXProject "TypiCodeImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48AB96602240163300CBD657 /* Debug */,
+				48AB96612240163300CBD657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48AB96622240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48AB96632240163300CBD657 /* Debug */,
+				48AB96642240163300CBD657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48AB96652240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48AB96662240163300CBD657 /* Debug */,
+				48AB96672240163300CBD657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48AB96692240163300CBD657 /* Debug */,
+				48AB966A2240163300CBD657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48AB96322240163000CBD657 /* Project object */;
+}
