@@ -18,6 +18,9 @@
 		48AB96802240389200CBD657 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96822240389200CBD657 /* Localizable.strings */; };
 		48AB96852240397D00CBD657 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96832240397C00CBD657 /* Strings.swift */; };
 		48AB96862240397D00CBD657 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96842240397D00CBD657 /* Images.swift */; };
+		48AB968822403AFA00CBD657 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968722403AFA00CBD657 /* Result.swift */; };
+		48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */; };
+		48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968B22403D6B00CBD657 /* NetworkUtils.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
 		7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
@@ -61,6 +64,9 @@
 		48AB96812240389200CBD657 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		48AB96832240397C00CBD657 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		48AB96842240397D00CBD657 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		48AB968722403AFA00CBD657 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetworkImplementation.swift; sourceTree = "<group>"; };
+		48AB968B22403D6B00CBD657 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				48AB966D22401B1500CBD657 /* Image.swift */,
+				48AB968722403AFA00CBD657 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				48AB966F22401CB700CBD657 /* NetworkProtocol.swift */,
+				48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */,
+				48AB968B22403D6B00CBD657 /* NetworkUtils.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -534,10 +543,13 @@
 			files = (
 				48AB96862240397D00CBD657 /* Images.swift in Sources */,
 				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
+				48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */,
 				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
 				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
+				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
+				48AB968822403AFA00CBD657 /* Result.swift in Sources */,
 				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

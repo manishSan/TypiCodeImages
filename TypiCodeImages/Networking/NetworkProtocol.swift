@@ -10,29 +10,24 @@ import Foundation
 import RxSwift
 import Moya
 
-/// An Enum type to describe the Source Behaviour
+/// An Enum type to describe the Source Behavior
 ///
 /// - live: make live request
 /// - stubbed: get data from stubbed json
 /// - stubbedWithDelay: get data from stubbed json after a delay
-enum SourceBehaviour {
+enum SourceBehavior {
     case live
     case stubbed
     case stubbedWithDelay(seconds: TimeInterval)
 }
 
-// An Enum type to describe the `NetworkWrapper` API result
-/// - success(Any): Notifies of the completion and returns the available Json.
-/// - failure(WebServiceError): Notifies and passes the WebServiceError.
-enum NetworkResult {
-    case success(Data)
-    case failure()
-}
-
 /// an Abstraction over Network Requests
 protocol NetworkProtocol {
+    /// enforce that the implementaion must have SourceBehavior
+    var sourceBehavior: SourceBehavior { get }
+
     /// download the images
     ///
-    /// - Returns: `Single<NetworkResult>`
-    func fetchImages() -> Single<NetworkResult>
+    /// - Returns: `Single<Result<Data>>`
+    func fetchImages() -> Single<Result<Data>>
 }
