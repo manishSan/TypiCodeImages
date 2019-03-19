@@ -24,7 +24,7 @@ class ApiClientTests: QuickSpec {
                 beforeEach {
                     stub(nwProvider) { stub in
                         when(stub.fetchImages()).then({ _ -> PrimitiveSequence<SingleTrait, Result<Data>> in
-                            return Single.just(Result.success(JSONLoader().loadJSON(filename: "sampleImages")!))
+                            return Single.just(Result.success(FileLoader().loadJSON(filename: "sampleImages")!))
                         })
                     }
                     client = ApiClient(networkProvider: nwProvider)

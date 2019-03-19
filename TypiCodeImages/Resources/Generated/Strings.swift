@@ -26,6 +26,10 @@ internal enum Constants {
   internal enum Network {
     /// http://jsonplaceholder.typicode.com
     internal static let baseURL = Constants.tr("Localizable", "Network.baseURL")
+    internal enum DownloadImage {
+      /// sample.png
+      internal static let sampleResponse = Constants.tr("Localizable", "Network.downloadImage.sampleResponse")
+    }
     internal enum Images {
       /// photos
       internal static let api = Constants.tr("Localizable", "Network.images.api")

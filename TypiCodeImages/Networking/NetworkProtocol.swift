@@ -27,4 +27,10 @@ protocol NetworkProtocol {
     ///
     /// - Returns: `Single<Result<Data>>`
     func fetchImages() -> Single<Result<Data>>
+
+    /// download image for a given URL
+    ///
+    /// - Parameter url: url
+    /// - Returns: Single<Result<Data>>
+    func downloadImage(url: URL) -> Single<Result<Data>>
 }

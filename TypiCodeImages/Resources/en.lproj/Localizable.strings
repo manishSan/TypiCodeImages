@@ -14,3 +14,5 @@
 "Network.baseURL" = "http://jsonplaceholder.typicode.com";
 "Network.images.api" = "photos";
 "Network.images.sampleResponse" = "sampleImages";
+
+"Network.downloadImage.sampleResponse" = "sample.png";

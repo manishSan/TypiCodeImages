@@ -14,18 +14,30 @@ import Moya
 /// - getImages: API to get the images
 enum TypiImageEndPoint {
     case getImages
+    case downloadImage(url: URL)
 }
 
 // MARK: - `TargetType` protocol implementation
 extension TypiImageEndPoint: TargetType {
     var baseURL: URL {
-        // swiftlint:disable force_unwrapping
-        return URL(string: Constants.Network.baseURL)!
-        // swiftlint:enable force_unwrapping
+        switch self {
+        case .getImages:
+            // swiftlint:disable force_unwrapping
+            return URL(string: Constants.Network.baseURL)!
+            // swiftlint:enable force_unwrapping
+        case .downloadImage(let url):
+            return url
+        }
+
     }
 
     var path: String {
-        return Constants.Network.Images.api
+        switch self {
+        case .getImages:
+            return Constants.Network.Images.api
+        case .downloadImage:
+            return ""
+        }
     }
 
     var method: Moya.Method {
@@ -33,7 +45,13 @@ extension TypiImageEndPoint: TargetType {
     }
 
     var sampleData: Data {
-        return JSONLoader().loadJSON(filename: Constants.Network.Images.sampleResponse) ?? Data()
+        switch self {
+        case .getImages:
+            return FileLoader().loadJSON(filename: Constants.Network.Images.sampleResponse) ?? Data()
+        case .downloadImage:
+            return FileLoader().loadFile(name: Constants.Network.DownloadImage.sampleResponse) ?? Data()
+        }
+
     }
 
     var task: Task {

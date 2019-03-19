@@ -13,8 +13,12 @@
 		132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */; };
 		132055E1224094D500DA1DAB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E0224094D500DA1DAB /* ApiClient.swift */; };
 		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
-		13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* JSONLoader.swift */; };
+		13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
 		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
+		487F619822417B2D006F9E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487F619722417B2D006F9E90 /* LaunchScreen.storyboard */; };
+		487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */; };
+		487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */; };
+		487F619F22418211006F9E90 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
 		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
 		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
@@ -30,6 +34,11 @@
 		48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB969E2241261C00CBD657 /* ApiClientTests.swift */; };
 		48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */; };
 		48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A42241288700CBD657 /* GeneratedMocks.swift */; };
+		48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */; };
+		48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */; };
+		48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AC2241397400CBD657 /* FlowCoordinator.swift */; };
+		48AB96B022413AEA00CBD657 /* TypiImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */; };
+		48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,9 +61,13 @@
 		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		132055E0224094D500DA1DAB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
-		13F4ADCE2240731C00FEF381 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		13F4ADCE2240731C00FEF381 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
 		363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		487F619722417B2D006F9E90 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewModel.swift; sourceTree = "<group>"; };
+		487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewController.swift; sourceTree = "<group>"; };
+		487F619E22418211006F9E90 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +89,11 @@
 		48AB969E2241261C00CBD657 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
 		48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
 		48AB96A42241288700CBD657 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+UnwrappedResolve.swift"; sourceTree = "<group>"; };
+		48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfigurator.swift; sourceTree = "<group>"; };
+		48AB96AC2241397400CBD657 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewController.swift; sourceTree = "<group>"; };
+		48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewModel.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,10 +151,20 @@
 		13F4ADCD2240730A00FEF381 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				13F4ADCE2240731C00FEF381 /* JSONLoader.swift */,
+				13F4ADCE2240731C00FEF381 /* FileLoader.swift */,
 				13F4ADD0224074E600FEF381 /* sampleImages.json */,
+				487F619E22418211006F9E90 /* sample.png */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		487F619922417C7C006F9E90 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */,
+				487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		48AB96312240163000CBD657 = {
@@ -163,6 +191,8 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				48AB96A7224136F800CBD657 /* UI */,
+				48AB96A6224136E900CBD657 /* FlowCoordinator */,
 				132055DF2240947400DA1DAB /* ApiClient */,
 				13F4ADCD2240730A00FEF381 /* Utils */,
 				48AB96772240378D00CBD657 /* Resources */,
@@ -228,6 +258,7 @@
 		48AB96772240378D00CBD657 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				487F619722417B2D006F9E90 /* LaunchScreen.storyboard */,
 				48AB96442240163200CBD657 /* Images.xcassets */,
 				48AB9678224037A000CBD657 /* Generated */,
 				48AB96822240389200CBD657 /* Localizable.strings */,
@@ -258,6 +289,34 @@
 				48AB96A42241288700CBD657 /* GeneratedMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		48AB96A6224136E900CBD657 /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */,
+				48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */,
+				48AB96AC2241397400CBD657 /* FlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		48AB96A7224136F800CBD657 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				487F619922417C7C006F9E90 /* DetailView */,
+				48AB96AE22413AC900CBD657 /* ImageView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		48AB96AE22413AC900CBD657 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */,
+				48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		8E806DB8A4D84B1B99050538 /* Frameworks */ = {
@@ -372,6 +431,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48AB96802240389200CBD657 /* Localizable.strings in Resources */,
+				487F619F22418211006F9E90 /* sample.png in Resources */,
+				487F619822417B2D006F9E90 /* LaunchScreen.storyboard in Resources */,
 				13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */,
 				48AB96452240163200CBD657 /* Images.xcassets in Resources */,
 			);
@@ -549,17 +610,24 @@
 			files = (
 				48AB96862240397D00CBD657 /* Images.swift in Sources */,
 				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
+				48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */,
 				48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */,
 				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
+				487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */,
 				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
 				48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */,
 				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
+				48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */,
+				48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */,
 				132055E1224094D500DA1DAB /* ApiClient.swift in Sources */,
-				13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */,
+				13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */,
 				48AB968822403AFA00CBD657 /* Result.swift in Sources */,
+				48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */,
+				487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */,
 				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
+				48AB96B022413AEA00CBD657 /* TypiImageListViewController.swift in Sources */,
 				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

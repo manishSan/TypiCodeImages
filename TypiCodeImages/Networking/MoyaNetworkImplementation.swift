@@ -41,4 +41,12 @@ struct MoyaNetworkImplementation: NetworkProtocol {
                 }
         }
     }
+
+    /// download image for a given URL
+    ///
+    /// - Parameter url: url
+    /// - Returns: Single<Result<Data>>
+    func downloadImage(url: URL) -> Single<Result<Data>> {
+        return Single.just(Result.failure(AppError.unknownError.error()))
+    }
 }

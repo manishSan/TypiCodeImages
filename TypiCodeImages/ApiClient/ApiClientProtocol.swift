@@ -16,4 +16,10 @@ protocol ApiClientProtocol {
     ///
     /// - Returns: Single<Result<[ImageProtocol]>>
     func images() -> Single<Result<[ImageProtocol]>>
+
+    /// get image for a given URL
+    ///
+    /// - Parameter forUrl: an Image URL
+    /// - Returns: `Single<UIImage?>`
+    func image(forUrl: URL) -> Single<UIImage?>
 }

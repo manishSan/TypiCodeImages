@@ -14,10 +14,10 @@ import Nimble
 class JSONLoaderTests: QuickSpec {
     override func spec() {
         describe("JsonLoader") {
-            var loader: JSONLoader?
+            var loader: FileLoader?
 
             beforeEach {
-                loader = JSONLoader()
+                loader = FileLoader()
             }
 
             afterEach {

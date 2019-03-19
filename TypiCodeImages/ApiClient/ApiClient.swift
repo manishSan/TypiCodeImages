@@ -11,7 +11,6 @@ import RxSwift
 
 /// ApiClient concrete implementation
 struct ApiClient: ApiClientProtocol {
-
     /// a network provider
     let networkProvider: NetworkProtocol
 
@@ -34,5 +33,10 @@ struct ApiClient: ApiClientProtocol {
                     return Result.failure(error)
                 }
             })
+    }
+
+    func image(forUrl: URL) -> Single<UIImage?> {
+        let image = UIImage(named: "sample.png")
+        return Single.just(image)
     }
 }
