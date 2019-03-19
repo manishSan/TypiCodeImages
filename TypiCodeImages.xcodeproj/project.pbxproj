@@ -11,6 +11,7 @@
 		132055D62240862E00DA1DAB /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
 		132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */; };
 		132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */; };
+		132055E1224094D500DA1DAB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E0224094D500DA1DAB /* ApiClient.swift */; };
 		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
 		13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* JSONLoader.swift */; };
 		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
@@ -46,6 +47,7 @@
 		132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocolTests.swift; sourceTree = "<group>"; };
 		132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndpointTests.swift; sourceTree = "<group>"; };
 		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
+		132055E0224094D500DA1DAB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
 		13F4ADCE2240731C00FEF381 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		132055DF2240947400DA1DAB /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				132055E0224094D500DA1DAB /* ApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
 		13F4ADCD2240730A00FEF381 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				132055DF2240947400DA1DAB /* ApiClient */,
 				13F4ADCD2240730A00FEF381 /* Utils */,
 				48AB96772240378D00CBD657 /* Resources */,
 				48AB96712240239800CBD657 /* Error */,
@@ -500,6 +511,7 @@
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
 				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
+				132055E1224094D500DA1DAB /* ApiClient.swift in Sources */,
 				13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */,
 				48AB968822403AFA00CBD657 /* Result.swift in Sources */,
 				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
