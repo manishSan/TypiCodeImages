@@ -27,6 +27,9 @@
 		48AB968822403AFA00CBD657 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968722403AFA00CBD657 /* Result.swift */; };
 		48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */; };
 		48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968B22403D6B00CBD657 /* NetworkUtils.swift */; };
+		48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB969E2241261C00CBD657 /* ApiClientTests.swift */; };
+		48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */; };
+		48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A42241288700CBD657 /* GeneratedMocks.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,9 @@
 		48AB968722403AFA00CBD657 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetworkImplementation.swift; sourceTree = "<group>"; };
 		48AB968B22403D6B00CBD657 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		48AB969E2241261C00CBD657 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		48AB96A42241288700CBD657 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				132055E0224094D500DA1DAB /* ApiClient.swift */,
+				48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 		48AB96512240163300CBD657 /* TypiCodeImagesTests */ = {
 			isa = PBXGroup;
 			children = (
+				48AB96A1224127E700CBD657 /* Mocks */,
+				48AB969D224125FE00CBD657 /* ApiClient */,
 				132055DA22408E6D00DA1DAB /* Utils */,
 				132055D3224079AF00DA1DAB /* Network */,
 				48AB96542240163300CBD657 /* Info.plist */,
@@ -235,6 +244,22 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		48AB969D224125FE00CBD657 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				48AB969E2241261C00CBD657 /* ApiClientTests.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		48AB96A1224127E700CBD657 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96A42241288700CBD657 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		8E806DB8A4D84B1B99050538 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +292,7 @@
 			buildPhases = (
 				777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */,
 				48AB96752240245000CBD657 /* Swiftgen */,
+				48AB96A0224127B600CBD657 /* Cuckoo */,
 				48AB96742240243400CBD657 /* Swiftlint */,
 				48AB96362240163000CBD657 /* Sources */,
 				48AB96372240163000CBD657 /* Frameworks */,
@@ -446,6 +472,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/scripts/swiftgen.sh\"\n";
 		};
+		48AB96A0224127B600CBD657 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\"\n";
+		};
 		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +554,7 @@
 				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
+				48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */,
 				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
 				132055E1224094D500DA1DAB /* ApiClient.swift in Sources */,
 				13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */,
@@ -526,6 +571,8 @@
 				132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */,
 				132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */,
 				132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */,
+				48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */,
+				48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,20 +9,19 @@
 import Foundation
 import RxSwift
 
-/// API Client specification
-protocol ApiClientProtocol {
-
-    func images() -> Single<Result<[Image]>>
-}
-
 /// ApiClient concrete implementation
 struct ApiClient: ApiClientProtocol {
 
+    /// a network provider
     let networkProvider: NetworkProtocol
 
-    func images() -> Single<Result<[Image]>> {
+    /// get Images
+    ///
+    /// - Returns: Single<Result<[Image]>>
+    func images() -> Single<Result<[ImageProtocol]>> {
         return networkProvider
-            .fetchImages().map({ (result) -> Result<[Image]> in
+            .fetchImages()
+            .map({ (result) -> Result<[ImageProtocol]> in
                 switch result {
                 case .success(let data):
                     do {
