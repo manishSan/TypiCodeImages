@@ -22,6 +22,17 @@ internal enum Constants {
     /// An Unknown Error occured
     internal static let unknownError = Constants.tr("Localizable", "Error.unknownError")
   }
+
+  internal enum Network {
+    /// http://jsonplaceholder.typicode.com
+    internal static let baseURL = Constants.tr("Localizable", "Network.baseURL")
+    internal enum Images {
+      /// photos
+      internal static let api = Constants.tr("Localizable", "Network.images.api")
+      /// sampleImages
+      internal static let sampleResponse = Constants.tr("Localizable", "Network.images.sampleResponse")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

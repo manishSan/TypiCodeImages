@@ -10,3 +10,7 @@
 "Error.networkFailure" = "A network failure happened";
 "Error.parameterLength" = "Check input parameter ";
 "Error.unknownError" = "An Unknown Error occured";
+
+"Network.baseURL" = "http://jsonplaceholder.typicode.com";
+"Network.images.api" = "photos";
+"Network.images.sampleResponse" = "sampleImages";

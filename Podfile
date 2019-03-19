@@ -6,6 +6,8 @@ def testing_pods
     pod 'RxBlocking'
     pod 'RxTest'
     pod 'Cuckoo'
+    pod 'Quick'
+    pod 'Nimble'
 end
 
 target 'TypiCodeImages' do

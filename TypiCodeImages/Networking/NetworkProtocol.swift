@@ -23,9 +23,6 @@ enum SourceBehavior {
 
 /// an Abstraction over Network Requests
 protocol NetworkProtocol {
-    /// enforce that the implementaion must have SourceBehavior
-    var sourceBehavior: SourceBehavior { get }
-
     /// download the images
     ///
     /// - Returns: `Single<Result<Data>>`

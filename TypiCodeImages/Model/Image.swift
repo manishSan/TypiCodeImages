@@ -11,7 +11,7 @@ import Foundation
 /// Protocol defining image contract
 protocol ImageProtocol {
     /// an albumID
-    var albumID: Int { get }
+    var albumId: Int { get }
     /// image identifier
     var id: Int { get }
     /// image title
@@ -25,7 +25,7 @@ protocol ImageProtocol {
 /// concrete implementation
 struct Image: ImageProtocol, Decodable {
     /// an albumID
-    let albumID: Int
+    let albumId: Int
     /// image identifier
     let id: Int
     /// image title

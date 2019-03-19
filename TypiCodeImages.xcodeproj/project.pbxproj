@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */; };
+		132055D62240862E00DA1DAB /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
+		132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */; };
+		132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */; };
+		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
+		13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* JSONLoader.swift */; };
+		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
 		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
 		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
-		48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */; };
-		48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */; };
 		48AB966E22401B1500CBD657 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966D22401B1500CBD657 /* Image.swift */; };
 		48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966F22401CB700CBD657 /* NetworkProtocol.swift */; };
 		48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */; };
@@ -22,7 +27,6 @@
 		48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */; };
 		48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968B22403D6B00CBD657 /* NetworkUtils.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
-		7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,18 +38,17 @@
 			remoteGlobalIDString = 48AB96392240163000CBD657;
 			remoteInfo = TypiCodeImages;
 		};
-		48AB965A2240163300CBD657 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48AB96322240163000CBD657 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48AB96392240163000CBD657;
-			remoteInfo = TypiCodeImages;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0DD78B3DEC87BA8046614844 /* Pods-TypiCodeImagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocolTests.swift; sourceTree = "<group>"; };
+		132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndpointTests.swift; sourceTree = "<group>"; };
+		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
+		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
+		13F4ADCE2240731C00FEF381 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
 		363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,9 +56,7 @@
 		48AB96442240163200CBD657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48AB96492240163200CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesTests.swift; sourceTree = "<group>"; };
 		48AB96542240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesUITests.swift; sourceTree = "<group>"; };
 		48AB965F2240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48AB966D22401B1500CBD657 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -92,17 +93,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48AB96562240163300CBD657 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132055D3224079AF00DA1DAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */,
+				132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		132055DA22408E6D00DA1DAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		13F4ADCD2240730A00FEF381 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13F4ADCE2240731C00FEF381 /* JSONLoader.swift */,
+				13F4ADD0224074E600FEF381 /* sampleImages.json */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		48AB96312240163000CBD657 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +139,6 @@
 			children = (
 				48AB963A2240163000CBD657 /* TypiCodeImages.app */,
 				48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */,
-				48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +146,7 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				13F4ADCD2240730A00FEF381 /* Utils */,
 				48AB96772240378D00CBD657 /* Resources */,
 				48AB96712240239800CBD657 /* Error */,
 				48AB966C22401AB800CBD657 /* Networking */,
@@ -142,7 +161,8 @@
 		48AB96512240163300CBD657 /* TypiCodeImagesTests */ = {
 			isa = PBXGroup;
 			children = (
-				48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */,
+				132055DA22408E6D00DA1DAB /* Utils */,
+				132055D3224079AF00DA1DAB /* Network */,
 				48AB96542240163300CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImagesTests;
@@ -172,6 +192,7 @@
 				48AB966F22401CB700CBD657 /* NetworkProtocol.swift */,
 				48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */,
 				48AB968B22403D6B00CBD657 /* NetworkUtils.swift */,
+				13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -270,26 +291,6 @@
 			productReference = 48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		48AB96582240163300CBD657 /* TypiCodeImagesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */;
-			buildPhases = (
-				75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */,
-				48AB96552240163300CBD657 /* Sources */,
-				48AB96562240163300CBD657 /* Frameworks */,
-				48AB96572240163300CBD657 /* Resources */,
-				06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				48AB965B2240163300CBD657 /* PBXTargetDependency */,
-			);
-			name = TypiCodeImagesUITests;
-			productName = TypiCodeImagesUITests;
-			productReference = 48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -304,10 +305,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					48AB964D2240163300CBD657 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 48AB96392240163000CBD657;
-					};
-					48AB96582240163300CBD657 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 48AB96392240163000CBD657;
 					};
@@ -328,7 +325,6 @@
 			targets = (
 				48AB96392240163000CBD657 /* TypiCodeImages */,
 				48AB964D2240163300CBD657 /* TypiCodeImagesTests */,
-				48AB96582240163300CBD657 /* TypiCodeImagesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48AB96802240389200CBD657 /* Localizable.strings in Resources */,
+				13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */,
 				48AB96452240163200CBD657 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,55 +344,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48AB96572240163300CBD657 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				132055D62240862E00DA1DAB /* sampleImages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		18064C016857A9ED87AE128E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
@@ -404,12 +371,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		34D9AC2BC4954648FD131AFC /* [CP] Check Pods Manifest.lock */ = {
@@ -466,24 +435,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/scripts/swiftgen.sh\"\n";
 		};
-		75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TypiCodeImagesUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,7 +459,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -531,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -549,7 +500,9 @@
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
 				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
+				13F4ADCF2240731C00FEF381 /* JSONLoader.swift in Sources */,
 				48AB968822403AFA00CBD657 /* Result.swift in Sources */,
+				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
 				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,15 +511,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48AB96552240163300CBD657 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */,
+				132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */,
+				132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */,
+				132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,11 +524,6 @@
 			isa = PBXTargetDependency;
 			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
 			targetProxy = 48AB964F2240163300CBD657 /* PBXContainerItemProxy */;
-		};
-		48AB965B2240163300CBD657 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
-			targetProxy = 48AB965A2240163300CBD657 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -791,46 +733,6 @@
 			};
 			name = Release;
 		};
-		48AB96692240163300CBD657 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TypiCodeImages;
-			};
-			name = Debug;
-		};
-		48AB966A2240163300CBD657 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C028E5DBC63AE14CC2D190F /* Pods-TypiCodeImagesUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TypiCodeImages;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -857,15 +759,6 @@
 			buildConfigurations = (
 				48AB96662240163300CBD657 /* Debug */,
 				48AB96672240163300CBD657 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48AB96692240163300CBD657 /* Debug */,
-				48AB966A2240163300CBD657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
