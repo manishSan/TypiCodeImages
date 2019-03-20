@@ -34,31 +34,13 @@ An iOS app challenge to display a list of images download from http://jsonplaceh
 
 ***Open source libraries used***
 
-  **RxSwift / RxCocoa**
-    Recative swift extension
+  1. RxSwift / RxCocoa
+  2. Swinject
+  3. SnapKit
+  4. Moya
+  5. SwiftGen
 
-  Swinject
-    A dependency injection framework.
-
-  SnapKit
-    swift library to
-
-  Moya
-
-  SwiftGen
-
-Use HTTPS - 1. Arbitrary load = yes
-
-Separation of concerns
-
-Mutability
-
-One way data flow
-
-protocol oriented programming
-
-Dependency Injection
-
-
-
-Open Source used
+  **For testing**
+  1. Nimble
+  2. Quick
+  3. Cuckoo
