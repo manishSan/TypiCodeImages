@@ -78,7 +78,7 @@ class TypiImageListViewController: UIViewController {
         switch state {
         case .loading:
             break
-        case .error(let string):
+        case .error:
             break
         case .ready:
             self.tableView.reloadData()
@@ -103,8 +103,9 @@ extension TypiImageListViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as UITableViewCell
         cell.textLabel?.text = viewModel.title(forIndex: indexPath)
-        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.numberOfLines = 3
         cell.accessoryType = .disclosureIndicator
+        cell.imageView?.image = Asset.placeholder.image
         viewModel
             .getThumbnailImage(forIndex: indexPath)
             .asDriver(onErrorJustReturn: nil)

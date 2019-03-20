@@ -12,6 +12,8 @@
 		132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */; };
 		132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */; };
 		132055E1224094D500DA1DAB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E0224094D500DA1DAB /* ApiClient.swift */; };
+		132055E42241BA6000DA1DAB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E32241BA6000DA1DAB /* ImageCache.swift */; };
+		132055E52241C3F200DA1DAB /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
 		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
 		13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
 		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
@@ -60,6 +62,7 @@
 		132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndpointTests.swift; sourceTree = "<group>"; };
 		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		132055E0224094D500DA1DAB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		132055E32241BA6000DA1DAB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
 		13F4ADCE2240731C00FEF381 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
@@ -148,6 +151,14 @@
 			path = ApiClient;
 			sourceTree = "<group>";
 		};
+		132055E22241B9B100DA1DAB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				132055E32241BA6000DA1DAB /* ImageCache.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		13F4ADCD2240730A00FEF381 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +202,7 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				132055E22241B9B100DA1DAB /* Storage */,
 				48AB96A7224136F800CBD657 /* UI */,
 				48AB96A6224136E900CBD657 /* FlowCoordinator */,
 				132055DF2240947400DA1DAB /* ApiClient */,
@@ -443,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				132055D62240862E00DA1DAB /* sampleImages.json in Resources */,
+				132055E52241C3F200DA1DAB /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +562,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\"\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\" \\\n\"${INPUT_DIR}/Storage/ImageCache.swift\"\n";
 		};
 		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -608,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132055E42241BA6000DA1DAB /* ImageCache.swift in Sources */,
 				48AB96862240397D00CBD657 /* Images.swift in Sources */,
 				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
 				48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */,
@@ -788,6 +802,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -806,6 +821,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -825,6 +841,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -846,6 +863,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

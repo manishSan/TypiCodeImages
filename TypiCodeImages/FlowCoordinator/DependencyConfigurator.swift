@@ -16,6 +16,8 @@ struct DependencyConfigurator {
     /// - Parameter container: swinject container
     static func configureBaseDependencies(container: Container) {
         container.register(NetworkProtocol.self) { _ in MoyaNetworkImplementation(source: .live) }
-        container.register(ApiClientProtocol.self) { r in ApiClient(networkProvider: r.resolveUnwrapped(NetworkProtocol.self))}
+        container.register(ImageCacheProtocol.self) { _ in ImageCache() }
+        container.register(ApiClientProtocol.self) { r in ApiClient(networkProvider: r.resolveUnwrapped(NetworkProtocol.self),
+                                                                    cache: r.resolveUnwrapped(ImageCacheProtocol.self))}
     }
 }

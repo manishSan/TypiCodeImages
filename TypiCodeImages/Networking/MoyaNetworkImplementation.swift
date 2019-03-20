@@ -14,23 +14,23 @@ import Moya
 struct MoyaNetworkImplementation: NetworkProtocol {
 
     /// moya provider
-    let nwProvider: MoyaProvider<TypiImageEndPoint>
+    let moyaProvider: MoyaProvider<TypiImageEndPoint>
 
     /// Initializer
     ///
     /// - Parameter source: the sourceBehavior
     init(source: SourceBehavior) {
-        nwProvider = NetworkUtils.imageDataProvider(sourceBehaviour: source)
+        moyaProvider = NetworkUtils.imageDataProvider(sourceBehaviour: source)
     }
 
     /// download the images
     ///
     /// - Returns: `Single<Result<Data>>`
     func fetchImages() -> Single<Result<Data>> {
-        return nwProvider
+        return moyaProvider
             .rx
             .request(.getImages)
-            .debug()
+//            .debug()
             .map {
                 do {
                     let data = try $0.filterSuccessfulStatusCodes().data
@@ -47,6 +47,18 @@ struct MoyaNetworkImplementation: NetworkProtocol {
     /// - Parameter url: url
     /// - Returns: Single<Result<Data>>
     func downloadImage(url: URL) -> Single<Result<Data>> {
-        return Single.just(Result.failure(AppError.unknownError.error()))
+        return moyaProvider
+            .rx
+            .request(.downloadImage(url: url))
+//            .debug()
+            .map({
+                do {
+                    let data = try $0.filterSuccessfulStatusCodes().data
+                    return Result.success(data)
+                } catch {
+                    let nwError = try JSONDecoder().decode(NetworkError.self, from: $0.data)
+                    return Result.failure(nwError)
+                }
+            })
     }
 }
