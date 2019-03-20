@@ -20,6 +20,9 @@ class TypiImageListViewController: UIViewController {
     /// tabelView
     var tableView = UITableView(frame: CGRect.zero)
 
+    /// refresg control
+    let refreshControl = UIRefreshControl()
+
     /// dispose bag
     let disposeBag = DisposeBag()
 
@@ -50,6 +53,8 @@ class TypiImageListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifier")
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshImages(_:)), for: .valueChanged)
         view.addSubview(tableView)
     }
 
@@ -83,6 +88,14 @@ class TypiImageListViewController: UIViewController {
         case .ready:
             self.tableView.reloadData()
         }
+        self.refreshControl.endRefreshing()
+    }
+
+    /// refresh images
+    ///
+    /// - Parameter _: sender
+    @objc func refreshImages(_ sender: Any) {
+        viewModel.fetchImageList()
     }
 }
 

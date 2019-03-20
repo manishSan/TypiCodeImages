@@ -66,7 +66,8 @@ struct BaseFlowCoordinator {
     private func showRootImagesViewController(window: UIWindow) {
         let navCtrl = UINavigationController()
         let vm = TypiImageListViewModel(apiClient: apiClient)
-        let vc = TypiImageListViewController(viewModel: vm)
+        //let vc = TypiImageListViewController(viewModel: vm)
+        let vc = TypiImageCollectionViewController(viewModel: vm)
         navCtrl.viewControllers = [vc]
         window.rootViewController = navCtrl
     }

@@ -105,7 +105,10 @@ struct TypiImageListViewModel: TypiImageListViewModelProtocol {
     /// - Parameter forIndex: indexPath
     /// - Returns: `String`
     func title(forIndex: IndexPath) -> String {
-        return imageAtIndex(forIndex: forIndex).title
+        guard let image = imageAtIndex(forIndex: forIndex) else {
+            return ""
+        }
+        return image.title
     }
 
     /// title for section
@@ -121,10 +124,16 @@ struct TypiImageListViewModel: TypiImageListViewModelProtocol {
     /// - Parameter forUrl: an image URL
     /// - Returns: Single<UIImage?>
     func getThumbnailImage(forIndex: IndexPath) -> Single<UIImage?> {
-        return apiClient.image(forUrl: imageAtIndex(forIndex: forIndex).thumbnailUrl)
+        guard let image = imageAtIndex(forIndex: forIndex) else {
+            return Single.just(nil)
+        }
+        return apiClient.image(forUrl: image.thumbnailUrl)
     }
 
-    private func imageAtIndex(forIndex: IndexPath) -> ImageProtocol {
+    private func imageAtIndex(forIndex: IndexPath) -> ImageProtocol? {
+        guard state.value.images().count > forIndex.row else {
+            return nil
+        }
         return state.value.images()[forIndex.row]
     }
 }

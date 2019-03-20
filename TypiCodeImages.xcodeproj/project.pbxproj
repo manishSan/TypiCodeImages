@@ -14,6 +14,8 @@
 		132055E1224094D500DA1DAB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E0224094D500DA1DAB /* ApiClient.swift */; };
 		132055E42241BA6000DA1DAB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E32241BA6000DA1DAB /* ImageCache.swift */; };
 		132055E52241C3F200DA1DAB /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
+		132055E72241E07800DA1DAB /* TypiImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */; };
+		132055E92241E50A00DA1DAB /* TypiImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */; };
 		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
 		13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
 		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
@@ -63,6 +65,8 @@
 		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		132055E0224094D500DA1DAB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		132055E32241BA6000DA1DAB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewController.swift; sourceTree = "<group>"; };
+		132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
 		13F4ADCE2240731C00FEF381 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 			children = (
 				48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */,
 				48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */,
+				132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */,
+				132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -625,6 +631,7 @@
 				48AB96862240397D00CBD657 /* Images.swift in Sources */,
 				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
 				48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */,
+				132055E92241E50A00DA1DAB /* TypiImageCollectionViewCell.swift in Sources */,
 				48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */,
 				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
 				487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */,
@@ -641,6 +648,7 @@
 				48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */,
 				487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */,
 				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
+				132055E72241E07800DA1DAB /* TypiImageCollectionViewController.swift in Sources */,
 				48AB96B022413AEA00CBD657 /* TypiImageListViewController.swift in Sources */,
 				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
