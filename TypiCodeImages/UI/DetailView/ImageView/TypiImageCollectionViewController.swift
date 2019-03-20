@@ -20,10 +20,13 @@ class TypiImageCollectionViewController: UIViewController {
     /// tabelView
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        layout.headerReferenceSize = CGSize(width: 400, height: 60)
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collection.delegate = self
         collection.dataSource = self
         collection.register(TypiImageCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewImageCell")
+        collection.register(TypiImageCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "collectionViewHeader")
+        collection.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "collectionViewFooter")
         collection.refreshControl = self.refreshControl
         collection.backgroundColor = .white
         return collection
@@ -145,10 +148,35 @@ extension TypiImageCollectionViewController: UICollectionViewDataSource {
         viewModel.select(index: indexPath)
     }
 
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: 400, height: 40)
+    }
+
+    func collectionView(collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: 400, height: 10)
+    }
+
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "collectionViewHeader", for: indexPath) as? TypiImageCollectionViewHeader {
+                headerView.label.text = viewModel.title(forSection: indexPath.section)
+                return headerView
+            }
+        case UICollectionView.elementKindSectionFooter:
+            return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "collectionViewFooter", for: indexPath)
+        default:
+            return UICollectionReusableView()
+        }
+        return UICollectionReusableView()
     }
 }
+
+extension TypiImageCollectionViewController: UICollectionViewDelegate {}
 
 extension TypiImageCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

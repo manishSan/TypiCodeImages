@@ -180,6 +180,7 @@
 			children = (
 				487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */,
 				487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */,
+				48AB96AE22413AC900CBD657 /* ImageView */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -323,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				487F619922417C7C006F9E90 /* DetailView */,
-				48AB96AE22413AC900CBD657 /* ImageView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
