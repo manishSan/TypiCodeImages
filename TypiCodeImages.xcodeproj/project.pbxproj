@@ -23,6 +23,7 @@
 		487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */; };
 		487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */; };
 		487F619F22418211006F9E90 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
+		487F61A1224288BC006F9E90 /* TypiImageCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */; };
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
 		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
 		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
@@ -75,6 +76,7 @@
 		487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewModel.swift; sourceTree = "<group>"; };
 		487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewController.swift; sourceTree = "<group>"; };
 		487F619E22418211006F9E90 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewHeader.swift; sourceTree = "<group>"; };
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */,
 				132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */,
 				132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */,
+				487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
 				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
 				48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */,
+				487F61A1224288BC006F9E90 /* TypiImageCollectionViewHeader.swift in Sources */,
 				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
 				48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */,
 				48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */,

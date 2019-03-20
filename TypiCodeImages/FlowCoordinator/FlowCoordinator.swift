@@ -52,7 +52,7 @@ struct BaseFlowCoordinator {
     ///   - window: the window to configure
     ///   - rootNavigationController: the navigation controller to be the `window`'s `rootViewController`
     private func configureWindow(window: UIWindow) {
-        window.backgroundColor = UIColor.red
+        window.backgroundColor = UIColor.white
     }
 
     /// Make the given window key and visible
@@ -65,10 +65,23 @@ struct BaseFlowCoordinator {
     /// show root Images view controller
     private func showRootImagesViewController(window: UIWindow) {
         let navCtrl = UINavigationController()
-        let vm = TypiImageListViewModel(apiClient: apiClient)
+        let vm = TypiImageListViewModel(apiClient: apiClient,
+                                        selectionClosure: {
+                                            navCtrl.pushViewController(self.showDetailView(forImage: $0), animated: true)
+        })
         //let vc = TypiImageListViewController(viewModel: vm)
         let vc = TypiImageCollectionViewController(viewModel: vm)
         navCtrl.viewControllers = [vc]
         window.rootViewController = navCtrl
+    }
+
+    /// get detail view
+    ///
+    /// - Parameter forImage: an image
+    /// - Returns: a UIviewController
+    private func showDetailView(forImage: ImageProtocol) -> UIViewController {
+        let vm = TypiImageDetailViewModel(image: forImage, apiClient: apiClient)
+        let vc = TypiImageDetailViewController(viewModel: vm)
+        return vc
     }
 }

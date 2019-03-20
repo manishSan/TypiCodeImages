@@ -20,9 +20,8 @@ class TypiImageCollectionViewController: UIViewController {
     /// tabelView
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 75, height: 75)
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        //collection.delegate = self
+        collection.delegate = self
         collection.dataSource = self
         collection.register(TypiImageCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewImageCell")
         collection.refreshControl = self.refreshControl
@@ -70,7 +69,10 @@ class TypiImageCollectionViewController: UIViewController {
     /// setup constraints
     func setUpConstraints() {
         collectionView.snp.makeConstraints { make in
-            make.edges.equalTo(view.snp.edges)
+            make.leading.equalTo(view.snp.leading).offset(2)
+            make.trailing.equalTo(view.snp.trailing).offset(-2)
+            make.top.equalTo(view.snp.top).offset(2)
+            make.bottom.equalTo(view.snp.bottom).offset(-2)
         }
     }
 
@@ -106,6 +108,10 @@ class TypiImageCollectionViewController: UIViewController {
     @objc func refreshImages(_ sender: Any) {
         viewModel.fetchImageList()
     }
+
+    func toggleLoadingIndicator(show: Bool) {
+
+    }
 }
 
 extension TypiImageCollectionViewController: UICollectionViewDataSource {
@@ -120,27 +126,36 @@ extension TypiImageCollectionViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewImageCell", for: indexPath) as! TypiImageCollectionViewCell
-        cell.imageView.image = Asset.placeholder.image
-        cell.imageView.contentMode = .scaleAspectFill
-        viewModel
-            .getThumbnailImage(forIndex: indexPath)
-            .asDriver(onErrorJustReturn: nil)
-            .drive(onNext: { image in
-                cell.imageView.image = image
-            })
-            .disposed(by: disposeBag)
-
-        return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewImageCell", for: indexPath) as? TypiImageCollectionViewCell {
+            cell.imageView.image = Asset.placeholder.image
+            cell.imageView.contentMode = .scaleAspectFill
+            viewModel
+                .getThumbnailImage(forIndex: indexPath)
+                .asDriver(onErrorJustReturn: nil)
+                .drive(onNext: { image in
+                    cell.imageView.image = image
+                })
+                .disposed(by: disposeBag)
+            return cell
+        }
+        return UICollectionViewCell()
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.select(index: indexPath)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+    }
+}
+
+extension TypiImageCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 150)
-//        let itemsPerRow: CGFloat = 5
-//        let hardCodedPadding: CGFloat = 1
-//        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
-//        let itemHeight = itemWidth
-//        return CGSize(width: itemWidth, height: itemHeight)
+        let itemsPerRow: CGFloat = 3
+        let hardCodedPadding: CGFloat = 4
+        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding * 2
+        let itemHeight = itemWidth
+        return CGSize(width: itemWidth, height: itemHeight)
     }
 }

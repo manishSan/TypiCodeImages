@@ -60,15 +60,27 @@ protocol TypiImageListViewModelProtocol {
     /// - Parameter forIndex: indexPath
     /// - Returns: Single<UIImage?>
     func getThumbnailImage(forIndex: IndexPath) -> Single<UIImage?>
+
+    /// selection event
+    ///
+    /// - Parameter index: IndexPath
+    func select(index: IndexPath)
 }
 
 struct TypiImageListViewModel: TypiImageListViewModelProtocol {
+    /// the state of the view controller
     let state: BehaviorRelay<TypiImageListState> = BehaviorRelay(value: .loading)
 
+    /// api client
     let apiClient: ApiClientProtocol
 
+    /// dispose bag
     let disposeBag = DisposeBag()
 
+    /// a selection closre to send the select event back to coordinator
+    let selectionClosure: (ImageProtocol) -> Void
+
+    /// get Images to load on UI
     func fetchImageList() {
         state.accept(.loading)
         apiClient
@@ -130,10 +142,20 @@ struct TypiImageListViewModel: TypiImageListViewModelProtocol {
         return apiClient.image(forUrl: image.thumbnailUrl)
     }
 
+    /// a helper method to find the Image object at an index, return nil if index is out of bound
     private func imageAtIndex(forIndex: IndexPath) -> ImageProtocol? {
         guard state.value.images().count > forIndex.row else {
             return nil
         }
         return state.value.images()[forIndex.row]
+    }
+
+    /// selection event
+    ///
+    /// - Parameter index: IndexPath
+    func select(index: IndexPath) {
+        if let image = imageAtIndex(forIndex: index) {
+            selectionClosure(image)
+        }
     }
 }

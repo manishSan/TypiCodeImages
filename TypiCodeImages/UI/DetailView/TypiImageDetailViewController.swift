@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 import SnapKit
+import RxSwift
 
 class TypiImageDetailViewController: UIViewController {
 
     let imageView = UIImageView(frame: CGRect.zero)
 
     let viewModel: TypiImageDetailViewModelProtocol
+
+    let disposeBag = DisposeBag()
 
     init(viewModel: TypiImageDetailViewModelProtocol) {
         self.viewModel = viewModel
@@ -26,12 +29,26 @@ class TypiImageDetailViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-         super.viewDidLoad()
-
+        super.viewDidLoad()
+        setUpUI()
+        setUpConstraints()
     }
 
     func setUpUI() {
-//        self.imageView.image = viewModel.image.thumbnailUrl
+        view.addSubview(imageView)
+        imageView.image =  Asset.placeholder.image
+        viewModel
+            .getFullImage()
+            .asDriver(onErrorJustReturn: nil)
+            .drive(onNext: { [weak self] image in
+                self?.imageView.image = image
+            })
+            .disposed(by: disposeBag)
     }
 
+    func setUpConstraints() {
+        imageView.snp.makeConstraints { make in
+            make.edges.equalTo(view.snp.edges)
+        }
+    }
 }
