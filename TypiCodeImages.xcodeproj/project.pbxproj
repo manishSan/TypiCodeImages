@@ -157,12 +157,12 @@
 			path = ApiClient;
 			sourceTree = "<group>";
 		};
-		132055E22241B9B100DA1DAB /* Storage */ = {
+		132055E22241B9B100DA1DAB /* Cache */ = {
 			isa = PBXGroup;
 			children = (
 				132055E32241BA6000DA1DAB /* ImageCache.swift */,
 			);
-			path = Storage;
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		13F4ADCD2240730A00FEF381 /* Utils */ = {
@@ -209,7 +209,7 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
-				132055E22241B9B100DA1DAB /* Storage */,
+				132055E22241B9B100DA1DAB /* Cache */,
 				48AB96A7224136F800CBD657 /* UI */,
 				48AB96A6224136E900CBD657 /* FlowCoordinator */,
 				132055DF2240947400DA1DAB /* ApiClient */,
@@ -600,6 +600,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -611,6 +612,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",

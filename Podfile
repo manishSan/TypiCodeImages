@@ -24,6 +24,7 @@ target 'TypiCodeImages' do
   pod 'Swinject'
   pod 'SnapKit'
   pod 'SwiftLint'
+  pod 'NVActivityIndicatorView'
 
   target 'TypiCodeImagesTests' do
     inherit! :search_paths
@@ -31,10 +32,10 @@ target 'TypiCodeImages' do
     testing_pods
   end
 
-  target 'TypiCodeImagesUITests' do
-    inherit! :search_paths
-    # Pods for testing
-    testing_pods
-  end
+#  target 'TypiCodeImagesUITests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#    testing_pods
+#  end
 
 end

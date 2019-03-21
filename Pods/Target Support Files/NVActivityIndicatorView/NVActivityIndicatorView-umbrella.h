@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TypiCodeImagesUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TypiCodeImagesUITestsVersionString[];
+FOUNDATION_EXPORT double NVActivityIndicatorViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char NVActivityIndicatorViewVersionString[];
 

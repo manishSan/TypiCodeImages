@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import SnapKit
+import NVActivityIndicatorView
 
 /// Image list view controller
 class TypiImageCollectionViewController: UIViewController {
@@ -38,6 +39,12 @@ class TypiImageCollectionViewController: UIViewController {
         refresh.addTarget(self, action: #selector(refreshImages(_:)), for: .valueChanged)
         return refresh
     }()
+
+    /// activit indicator
+    let activityIndicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20),
+                                                    type: NVActivityIndicatorType.ballRotateChase,
+                                                    color: .black,
+                                                    padding: nil)
 
     /// dispose bag
     let disposeBag = DisposeBag()
@@ -67,6 +74,9 @@ class TypiImageCollectionViewController: UIViewController {
     func setupView() {
         self.edgesForExtendedLayout = []
         view.addSubview(collectionView)
+        view.addSubview(activityIndicator)
+        activityIndicator.center = view.center
+        activityIndicator.stopAnimating()
     }
 
     /// setup constraints
@@ -96,10 +106,11 @@ class TypiImageCollectionViewController: UIViewController {
     func handle(state: TypiImageListState) {
         switch state {
         case .loading:
-            break
+            activityIndicator.startAnimating()
         case .error:
-            break
+            activityIndicator.stopAnimating()
         case .ready:
+            activityIndicator.stopAnimating()
             self.collectionView.reloadData()
         }
         self.refreshControl.endRefreshing()
@@ -110,10 +121,6 @@ class TypiImageCollectionViewController: UIViewController {
     /// - Parameter _: sender
     @objc func refreshImages(_ sender: Any) {
         viewModel.fetchImageList()
-    }
-
-    func toggleLoadingIndicator(show: Bool) {
-
     }
 }
 

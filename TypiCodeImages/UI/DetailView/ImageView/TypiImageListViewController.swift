@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import SnapKit
+import NVActivityIndicatorView
 
 /// Image list view controller
 class TypiImageListViewController: UIViewController {
@@ -82,6 +83,7 @@ class TypiImageListViewController: UIViewController {
     func handle(state: TypiImageListState) {
         switch state {
         case .loading:
+
             break
         case .error:
             break
