@@ -35,7 +35,7 @@ An iOS app challenge to display a list of images download from http://jsonplaceh
   6. The app uses **Dependency injection** to decouple the implementation of different components. This improved re-usability and allow for writing targeted unit test cases.
 
 ### Testing and unit Test
-  The app has an extensive test coverage for the functionality it provides. The parts where we have most of the logic, i.e `APiClient`, `NetworkProvider`, `Cache`, `viewModel's` and `utility` classes. Current code coverage is at **70.6%** percent, this can also be improved slightly if we'll exclude View components from coverage computation.
+  The app has an extensive test coverage for the functionality it provides. The parts where we have most of the logic, i.e `APiClient`, `NetworkProvider`, `Cache`, `viewModel's` and `utility` classes has close to **90% - 100%** test coverage. Overall code coverage is at **70%** percent, this coverage data can also be improved slightly if we'll exclude View components from coverage computation.
 
   The app also has an ability to mock the responses locally, just change the input value of `MoyaNetworkImplementation` to `.stubbed` in `DependencyConfigurator.swift` and the app would run via a locally provided sample json and images. This technique is specially useful in writing deterministic integration tests where you can control the input parameters to the program and see output with different conditions.
 
