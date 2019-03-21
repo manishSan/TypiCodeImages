@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TypiCodeImages/ApiClient/ApiClientProtocol.swift at 2019-03-21 18:58:55 +0000
+// MARK: - Mocks generated from file: TypiCodeImages/ApiClient/ApiClientProtocol.swift at 2019-03-21 19:23:08 +0000
 
 //
 //  ApiClientProtocol.swift
@@ -132,7 +132,7 @@ import RxSwift
 }
 
 
-// MARK: - Mocks generated from file: TypiCodeImages/Cache/ImageCache.swift at 2019-03-21 18:58:55 +0000
+// MARK: - Mocks generated from file: TypiCodeImages/Cache/ImageCache.swift at 2019-03-21 19:23:08 +0000
 
 //
 //  ImageCache.swift
@@ -266,7 +266,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: TypiCodeImages/Networking/NetworkProtocol.swift at 2019-03-21 18:58:55 +0000
+// MARK: - Mocks generated from file: TypiCodeImages/Networking/NetworkProtocol.swift at 2019-03-21 19:23:08 +0000
 
 //
 //  NetworkProtocol.swift

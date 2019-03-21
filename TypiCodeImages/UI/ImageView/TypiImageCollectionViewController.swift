@@ -21,6 +21,8 @@ class TypiImageCollectionViewController: UIViewController {
     /// tabelView
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 2
+        layout.minimumLineSpacing = 2
         layout.headerReferenceSize = CGSize(width: 400, height: 60)
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collection.delegate = self
@@ -191,9 +193,9 @@ extension TypiImageCollectionViewController: UICollectionViewDelegate {}
 
 extension TypiImageCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemsPerRow: CGFloat = 3
-        let hardCodedPadding: CGFloat = 4
-        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding * 2
+        let itemsPerRow: CGFloat = 4
+        let hardCodedPadding: CGFloat = 2
+        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
         let itemHeight = itemWidth
         return CGSize(width: itemWidth, height: itemHeight)
     }
