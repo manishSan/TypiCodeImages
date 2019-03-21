@@ -1,0 +1,23 @@
+input_dir: TypiCodeImages/Resources
+output_dir: TypiCodeImages/Resources/Generated
+
+strings:
+  inputs: en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Strings.swift
+      params:
+        enumName: Constants
+
+xcassets:
+  inputs:
+    - Images.xcassets
+  outputs:
+    - templateName: swift4
+      output: Images.swift
+
+# colors:
+#   inputs: colors.txt
+#   outputs:
+#     templateName: swift4
+#     output: Colors.swift

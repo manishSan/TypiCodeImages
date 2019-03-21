@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  TypiCodeImages
+
+  Created by Sanwal, Manish on 3/18/19.
+  Copyright © 2019 Sanwal. All rights reserved.
+*/
+
+"Error.parsingData" = "Error parsing data returned from server";
+"Error.networkFailure" = "A network failure happened";
+"Error.parameterLength" = "Check input parameter ";
+"Error.unknownError" = "An Unknown Error occured";
+
+"Network.baseURL" = "http://jsonplaceholder.typicode.com";
+"Network.images.api" = "photos";
+"Network.images.sampleResponse" = "sampleImages";
+
+"Network.downloadImage.sampleResponse" = "sample.png";
+
+"UI.ListScreen.title" = "Albums";
+"UI.DetailScreen.title" = "Photo";

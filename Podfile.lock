@@ -9,6 +9,11 @@ PODS:
   - Moya/RxSwift (12.0.1):
     - Moya/Core
     - RxSwift (~> 4.0)
+  - Nimble (8.0.1)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+  - Quick (2.0.0)
   - Result (4.1.0)
   - RxAtomic (4.4.2)
   - RxBlocking (4.4.2):
@@ -30,6 +35,9 @@ DEPENDENCIES:
   - Cuckoo
   - Moya
   - Moya/RxSwift
+  - Nimble
+  - NVActivityIndicatorView
+  - Quick
   - RxBlocking
   - RxCocoa
   - RxSwift
@@ -44,6 +52,9 @@ SPEC REPOS:
     - Alamofire
     - Cuckoo
     - Moya
+    - Nimble
+    - NVActivityIndicatorView
+    - Quick
     - Result
     - RxAtomic
     - RxBlocking
@@ -59,6 +70,9 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Cuckoo: 2f10364798baa4b0d4aacabfa475249cf29977bc
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxBlocking: e96fdda1473d81332a6ed2cface935dc2167a122
@@ -70,6 +84,6 @@ SPEC CHECKSUMS:
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
 
-PODFILE CHECKSUM: aa524828d3f35b63868d623e84f5c56735c8ef35
+PODFILE CHECKSUM: a31c4d7d0ee9874a0f607a411c8d847e59ba3938
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
