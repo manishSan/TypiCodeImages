@@ -41,10 +41,15 @@ class TypiImageCollectionViewController: UIViewController {
     }()
 
     /// activit indicator
-    let activityIndicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20),
-                                                    type: NVActivityIndicatorType.ballRotateChase,
-                                                    color: .black,
-                                                    padding: nil)
+    lazy var activityIndicator: NVActivityIndicatorView = {
+        let xAxis = self.view.center.x
+        let yAxis = self.view.center.y
+        let frame = CGRect(x: (xAxis - 25), y: (yAxis - 50), width: 50, height: 50)
+        let activity = NVActivityIndicatorView(frame: frame)
+        activity.type = .audioEqualizer
+        activity.color = UIColor.gray
+        return activity
+    }()
 
     /// dispose bag
     let disposeBag = DisposeBag()
@@ -75,7 +80,6 @@ class TypiImageCollectionViewController: UIViewController {
         self.edgesForExtendedLayout = []
         view.addSubview(collectionView)
         view.addSubview(activityIndicator)
-        activityIndicator.center = view.center
         activityIndicator.stopAnimating()
     }
 

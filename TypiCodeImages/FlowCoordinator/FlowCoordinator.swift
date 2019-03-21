@@ -67,11 +67,14 @@ struct BaseFlowCoordinator {
         let navCtrl = UINavigationController()
         let vm = TypiImageListViewModel(apiClient: apiClient,
                                         selectionClosure: {
-                                            navCtrl.pushViewController(self.showDetailView(forImage: $0), animated: true)
+                                            let detailVC = self.showDetailView(forImage: $0)
+                                            detailVC.title = Constants.Ui.DetailScreen.title
+                                            navCtrl.pushViewController(detailVC, animated: true)
         })
         //let vc = TypiImageListViewController(viewModel: vm)
         let vc = TypiImageCollectionViewController(viewModel: vm)
         navCtrl.viewControllers = [vc]
+        vc.title = Constants.Ui.ListScreen.title
         window.rootViewController = navCtrl
     }
 

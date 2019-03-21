@@ -49,7 +49,7 @@ extension TypiImageEndPoint: TargetType {
         case .getImages:
             return FileLoader().loadJSON(filename: Constants.Network.Images.sampleResponse) ?? Data()
         case .downloadImage:
-            return FileLoader().loadFile(name: Constants.Network.DownloadImage.sampleResponse) ?? Data()
+            return Asset.sample.image.pngData() ?? Data()
         }
 
     }

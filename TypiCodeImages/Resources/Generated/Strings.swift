@@ -37,6 +37,17 @@ internal enum Constants {
       internal static let sampleResponse = Constants.tr("Localizable", "Network.images.sampleResponse")
     }
   }
+
+  internal enum Ui {
+    internal enum DetailScreen {
+      /// Photo
+      internal static let title = Constants.tr("Localizable", "UI.DetailScreen.title")
+    }
+    internal enum ListScreen {
+      /// Albums
+      internal static let title = Constants.tr("Localizable", "UI.ListScreen.title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

@@ -23,16 +23,4 @@ final class FileLoader {
 
         return jsonData
     }
-
-    /// Load a file from bundle and return data
-    ///
-    /// - Parameter filename: a filename with extension
-    /// - Returns: Json file Data. Returns nil if it can't find the file.
-    func loadFile(name: String) -> Data? {
-        guard let fileContent = try? String(contentsOfFile: name),
-            let data = fileContent.data(using: String.Encoding.utf8) else {
-                return nil
-        }
-        return data
-    }
 }

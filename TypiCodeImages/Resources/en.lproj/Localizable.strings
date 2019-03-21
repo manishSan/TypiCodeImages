@@ -16,3 +16,6 @@
 "Network.images.sampleResponse" = "sampleImages";
 
 "Network.downloadImage.sampleResponse" = "sample.png";
+
+"UI.ListScreen.title" = "Albums";
+"UI.DetailScreen.title" = "Photo";

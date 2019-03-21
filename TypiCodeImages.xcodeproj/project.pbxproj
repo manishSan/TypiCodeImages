@@ -24,8 +24,14 @@
 		487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */; };
 		487F619F22418211006F9E90 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
 		487F61A1224288BC006F9E90 /* TypiImageCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */; };
+		487F61A42243DD42006F9E90 /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A32243DD42006F9E90 /* ImageCacheTests.swift */; };
+		487F61A52243DE2C006F9E90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
+		487F61A82243E3BC006F9E90 /* TypiCodeImageErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */; };
+		487F61AB2243E550006F9E90 /* TypiImageDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */; };
+		487F61AE2243EB83006F9E90 /* 771796.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F61AD2243EB83006F9E90 /* 771796.png */; };
+		487F61AF2243EC9E006F9E90 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
+		487F61B12243EF28006F9E90 /* TypiImageListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */; };
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
-		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
 		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
 		48AB966E22401B1500CBD657 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966D22401B1500CBD657 /* Image.swift */; };
 		48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966F22401CB700CBD657 /* NetworkProtocol.swift */; };
@@ -42,7 +48,6 @@
 		48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */; };
 		48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */; };
 		48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AC2241397400CBD657 /* FlowCoordinator.swift */; };
-		48AB96B022413AEA00CBD657 /* TypiImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */; };
 		48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
@@ -77,9 +82,13 @@
 		487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewController.swift; sourceTree = "<group>"; };
 		487F619E22418211006F9E90 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewHeader.swift; sourceTree = "<group>"; };
+		487F61A32243DD42006F9E90 /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
+		487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImageErrorTests.swift; sourceTree = "<group>"; };
+		487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewModelTests.swift; sourceTree = "<group>"; };
+		487F61AD2243EB83006F9E90 /* 771796.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 771796.png; sourceTree = "<group>"; };
+		487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewModelTests.swift; sourceTree = "<group>"; };
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48AB96442240163200CBD657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48AB96492240163200CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +110,6 @@
 		48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+UnwrappedResolve.swift"; sourceTree = "<group>"; };
 		48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfigurator.swift; sourceTree = "<group>"; };
 		48AB96AC2241397400CBD657 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
-		48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewController.swift; sourceTree = "<group>"; };
 		48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewModel.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,9 +188,33 @@
 			children = (
 				487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */,
 				487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */,
-				48AB96AE22413AC900CBD657 /* ImageView */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		487F61A22243DD2F006F9E90 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				487F61A32243DD42006F9E90 /* ImageCacheTests.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		487F61A62243E3A8006F9E90 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		487F61A92243E520006F9E90 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */,
+				487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		48AB96312240163000CBD657 = {
@@ -219,7 +251,6 @@
 				48AB966C22401AB800CBD657 /* Networking */,
 				48AB966B22401A9900CBD657 /* Model */,
 				48AB963D2240163000CBD657 /* AppDelegate.swift */,
-				48AB963F2240163000CBD657 /* ViewController.swift */,
 				48AB96492240163200CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImages;
@@ -228,6 +259,10 @@
 		48AB96512240163300CBD657 /* TypiCodeImagesTests */ = {
 			isa = PBXGroup;
 			children = (
+				487F61AD2243EB83006F9E90 /* 771796.png */,
+				487F61A92243E520006F9E90 /* UI */,
+				487F61A62243E3A8006F9E90 /* Error */,
+				487F61A22243DD2F006F9E90 /* Cache */,
 				48AB96A1224127E700CBD657 /* Mocks */,
 				48AB969D224125FE00CBD657 /* ApiClient */,
 				132055DA22408E6D00DA1DAB /* Utils */,
@@ -323,6 +358,7 @@
 		48AB96A7224136F800CBD657 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				48AB96AE22413AC900CBD657 /* ImageView */,
 				487F619922417C7C006F9E90 /* DetailView */,
 			);
 			path = UI;
@@ -331,7 +367,6 @@
 		48AB96AE22413AC900CBD657 /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
-				48AB96AF22413AEA00CBD657 /* TypiImageListViewController.swift */,
 				48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */,
 				132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */,
 				132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */,
@@ -463,7 +498,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487F61A52243DE2C006F9E90 /* Images.xcassets in Resources */,
 				132055D62240862E00DA1DAB /* sampleImages.json in Resources */,
+				487F61AE2243EB83006F9E90 /* 771796.png in Resources */,
 				132055E52241C3F200DA1DAB /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,7 +608,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\" \\\n\"${INPUT_DIR}/Storage/ImageCache.swift\"\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\" \\\n\"${INPUT_DIR}/Cache/ImageCache.swift\"\n";
 		};
 		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -638,7 +675,6 @@
 				48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */,
 				132055E92241E50A00DA1DAB /* TypiImageCollectionViewCell.swift in Sources */,
 				48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */,
-				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
 				487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */,
 				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
@@ -655,7 +691,6 @@
 				487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */,
 				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
 				132055E72241E07800DA1DAB /* TypiImageCollectionViewController.swift in Sources */,
-				48AB96B022413AEA00CBD657 /* TypiImageListViewController.swift in Sources */,
 				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,9 +700,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */,
+				487F61AB2243E550006F9E90 /* TypiImageDetailViewModelTests.swift in Sources */,
+				487F61A82243E3BC006F9E90 /* TypiCodeImageErrorTests.swift in Sources */,
 				132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */,
 				132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */,
 				48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */,
+				487F61AF2243EC9E006F9E90 /* FileLoader.swift in Sources */,
+				487F61A42243DD42006F9E90 /* ImageCacheTests.swift in Sources */,
+				487F61B12243EF28006F9E90 /* TypiImageListViewModelTests.swift in Sources */,
 				48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TypiCodeImages/ApiClient/ApiClientProtocol.swift at 2019-03-21 03:53:05 +0000
+// MARK: - Mocks generated from file: TypiCodeImages/ApiClient/ApiClientProtocol.swift at 2019-03-21 18:58:55 +0000
 
 //
 //  ApiClientProtocol.swift
@@ -132,7 +132,141 @@ import RxSwift
 }
 
 
-// MARK: - Mocks generated from file: TypiCodeImages/Networking/NetworkProtocol.swift at 2019-03-21 03:53:05 +0000
+// MARK: - Mocks generated from file: TypiCodeImages/Cache/ImageCache.swift at 2019-03-21 18:58:55 +0000
+
+//
+//  ImageCache.swift
+//  TypiCodeImages
+//
+//  Created by manish on 3/19/19.
+//  Copyright © 2019 Sanwal. All rights reserved.
+//
+
+import Cuckoo
+@testable import TypiCodeImages
+
+import Foundation
+import UIKit
+
+
+ class MockImageCacheProtocol: ImageCacheProtocol, Cuckoo.ProtocolMock {
+     typealias MocksType = ImageCacheProtocol
+     typealias Stubbing = __StubbingProxy_ImageCacheProtocol
+     typealias Verification = __VerificationProxy_ImageCacheProtocol
+
+    private var __defaultImplStub: ImageCacheProtocol?
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+     func enableDefaultImplementation(_ stub: ImageCacheProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+
+    
+
+    
+
+    
+    
+    
+     func getImage(forURL: URL)  -> UIImage? {
+        
+            return cuckoo_manager.call("getImage(forURL: URL) -> UIImage?",
+                parameters: (forURL),
+                escapingParameters: (forURL),
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.getImage(forURL: forURL))
+        
+    }
+    
+    
+    
+     func setImage(_ image: UIImage, forURL: URL)  {
+        
+            return cuckoo_manager.call("setImage(_: UIImage, forURL: URL)",
+                parameters: (image, forURL),
+                escapingParameters: (image, forURL),
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.setImage(image, forURL: forURL))
+        
+    }
+    
+
+	 struct __StubbingProxy_ImageCacheProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func getImage<M1: Cuckoo.Matchable>(forURL: M1) -> Cuckoo.ProtocolStubFunction<(URL), Optional<UIImage>> where M1.MatchedType == URL {
+	        let matchers: [Cuckoo.ParameterMatcher<(URL)>] = [wrap(matchable: forURL) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockImageCacheProtocol.self, method: "getImage(forURL: URL) -> UIImage?", parameterMatchers: matchers))
+	    }
+	    
+	    func setImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(_ image: M1, forURL: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(UIImage, URL)> where M1.MatchedType == UIImage, M2.MatchedType == URL {
+	        let matchers: [Cuckoo.ParameterMatcher<(UIImage, URL)>] = [wrap(matchable: image) { $0.0 }, wrap(matchable: forURL) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockImageCacheProtocol.self, method: "setImage(_: UIImage, forURL: URL)", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	 struct __VerificationProxy_ImageCacheProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func getImage<M1: Cuckoo.Matchable>(forURL: M1) -> Cuckoo.__DoNotUse<Optional<UIImage>> where M1.MatchedType == URL {
+	        let matchers: [Cuckoo.ParameterMatcher<(URL)>] = [wrap(matchable: forURL) { $0 }]
+	        return cuckoo_manager.verify("getImage(forURL: URL) -> UIImage?", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func setImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(_ image: M1, forURL: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == UIImage, M2.MatchedType == URL {
+	        let matchers: [Cuckoo.ParameterMatcher<(UIImage, URL)>] = [wrap(matchable: image) { $0.0 }, wrap(matchable: forURL) { $0.1 }]
+	        return cuckoo_manager.verify("setImage(_: UIImage, forURL: URL)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+
+}
+
+ class ImageCacheProtocolStub: ImageCacheProtocol {
+    
+
+    
+
+    
+     func getImage(forURL: URL)  -> UIImage? {
+        return DefaultValueRegistry.defaultValue(for: Optional<UIImage>.self)
+    }
+    
+     func setImage(_ image: UIImage, forURL: URL)  {
+        return DefaultValueRegistry.defaultValue(for: Void.self)
+    }
+    
+}
+
+
+// MARK: - Mocks generated from file: TypiCodeImages/Networking/NetworkProtocol.swift at 2019-03-21 18:58:55 +0000
 
 //
 //  NetworkProtocol.swift

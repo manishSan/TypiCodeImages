@@ -110,7 +110,7 @@ struct TypiImageListViewModel: TypiImageListViewModelProtocol {
     ///
     /// - Parameter images: an Image array
     /// - Returns: [Int: [ImageProtocol]]
-    func processImageResult(images: [ImageProtocol]) -> [Int: [ImageProtocol]] {
+    private func processImageResult(images: [ImageProtocol]) -> [Int: [ImageProtocol]] {
         var albumsDict = [Int: [ImageProtocol]]()
         for item in images {
             if var array = albumsDict[item.albumId] {
