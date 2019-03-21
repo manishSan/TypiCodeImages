@@ -7,15 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */; };
+		132055D62240862E00DA1DAB /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
+		132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */; };
+		132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */; };
+		132055E1224094D500DA1DAB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E0224094D500DA1DAB /* ApiClient.swift */; };
+		132055E42241BA6000DA1DAB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E32241BA6000DA1DAB /* ImageCache.swift */; };
+		132055E52241C3F200DA1DAB /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
+		132055E72241E07800DA1DAB /* TypiImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */; };
+		132055E92241E50A00DA1DAB /* TypiImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */; };
+		13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */; };
+		13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
+		13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F4ADD0224074E600FEF381 /* sampleImages.json */; };
+		487F619822417B2D006F9E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487F619722417B2D006F9E90 /* LaunchScreen.storyboard */; };
+		487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */; };
+		487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */; };
+		487F619F22418211006F9E90 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F619E22418211006F9E90 /* sample.png */; };
+		487F61A1224288BC006F9E90 /* TypiImageCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */; };
+		487F61A42243DD42006F9E90 /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A32243DD42006F9E90 /* ImageCacheTests.swift */; };
+		487F61A52243DE2C006F9E90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
+		487F61A82243E3BC006F9E90 /* TypiCodeImageErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */; };
+		487F61AB2243E550006F9E90 /* TypiImageDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */; };
+		487F61AE2243EB83006F9E90 /* 771796.png in Resources */ = {isa = PBXBuildFile; fileRef = 487F61AD2243EB83006F9E90 /* 771796.png */; };
+		487F61AF2243EC9E006F9E90 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4ADCE2240731C00FEF381 /* FileLoader.swift */; };
+		487F61B12243EF28006F9E90 /* TypiImageListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */; };
 		48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963D2240163000CBD657 /* AppDelegate.swift */; };
-		48AB96402240163000CBD657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB963F2240163000CBD657 /* ViewController.swift */; };
-		48AB96432240163100CBD657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96412240163100CBD657 /* Main.storyboard */; };
-		48AB96452240163200CBD657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Assets.xcassets */; };
-		48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96462240163200CBD657 /* LaunchScreen.storyboard */; };
-		48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */; };
-		48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */; };
+		48AB96452240163200CBD657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96442240163200CBD657 /* Images.xcassets */; };
+		48AB966E22401B1500CBD657 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966D22401B1500CBD657 /* Image.swift */; };
+		48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB966F22401CB700CBD657 /* NetworkProtocol.swift */; };
+		48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */; };
+		48AB96802240389200CBD657 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48AB96822240389200CBD657 /* Localizable.strings */; };
+		48AB96852240397D00CBD657 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96832240397C00CBD657 /* Strings.swift */; };
+		48AB96862240397D00CBD657 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96842240397D00CBD657 /* Images.swift */; };
+		48AB968822403AFA00CBD657 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968722403AFA00CBD657 /* Result.swift */; };
+		48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */; };
+		48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB968B22403D6B00CBD657 /* NetworkUtils.swift */; };
+		48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB969E2241261C00CBD657 /* ApiClientTests.swift */; };
+		48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */; };
+		48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A42241288700CBD657 /* GeneratedMocks.swift */; };
+		48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */; };
+		48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */; };
+		48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96AC2241397400CBD657 /* FlowCoordinator.swift */; };
+		48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */; };
 		609F708752157DE1236D08E7 /* Pods_TypiCodeImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FCBFDC66CD9238609B5527 /* Pods_TypiCodeImages.framework */; };
-		7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */; };
 		BE3C1D78C90F932699FFD5D0 /* Pods_TypiCodeImagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B7D674FF96533088FE42A1 /* Pods_TypiCodeImagesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,32 +61,56 @@
 			remoteGlobalIDString = 48AB96392240163000CBD657;
 			remoteInfo = TypiCodeImages;
 		};
-		48AB965A2240163300CBD657 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48AB96322240163000CBD657 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48AB96392240163000CBD657;
-			remoteInfo = TypiCodeImages;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0DD78B3DEC87BA8046614844 /* Pods-TypiCodeImagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocolTests.swift; sourceTree = "<group>"; };
+		132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndpointTests.swift; sourceTree = "<group>"; };
+		132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
+		132055E0224094D500DA1DAB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		132055E32241BA6000DA1DAB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewController.swift; sourceTree = "<group>"; };
+		132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageEndPoint.swift; sourceTree = "<group>"; };
+		13F4ADCE2240731C00FEF381 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		13F4ADD0224074E600FEF381 /* sampleImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleImages.json; sourceTree = "<group>"; };
 		363001595EB4D61814D29068 /* Pods_TypiCodeImagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypiCodeImagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		487F619722417B2D006F9E90 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewModel.swift; sourceTree = "<group>"; };
+		487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewController.swift; sourceTree = "<group>"; };
+		487F619E22418211006F9E90 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageCollectionViewHeader.swift; sourceTree = "<group>"; };
+		487F61A32243DD42006F9E90 /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
+		487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImageErrorTests.swift; sourceTree = "<group>"; };
+		487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageDetailViewModelTests.swift; sourceTree = "<group>"; };
+		487F61AD2243EB83006F9E90 /* 771796.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 771796.png; sourceTree = "<group>"; };
+		487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewModelTests.swift; sourceTree = "<group>"; };
 		48AB963A2240163000CBD657 /* TypiCodeImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypiCodeImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB963D2240163000CBD657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48AB963F2240163000CBD657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48AB96422240163100CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		48AB96442240163200CBD657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		48AB96472240163200CBD657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48AB96442240163200CBD657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48AB96492240163200CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesTests.swift; sourceTree = "<group>"; };
 		48AB96542240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypiCodeImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB965D2240163300CBD657 /* TypiCodeImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesUITests.swift; sourceTree = "<group>"; };
 		48AB965F2240163300CBD657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AB966D22401B1500CBD657 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		48AB966F22401CB700CBD657 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeImagesError.swift; sourceTree = "<group>"; };
+		48AB96812240389200CBD657 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		48AB96832240397C00CBD657 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		48AB96842240397D00CBD657 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		48AB968722403AFA00CBD657 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetworkImplementation.swift; sourceTree = "<group>"; };
+		48AB968B22403D6B00CBD657 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		48AB969E2241261C00CBD657 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		48AB96A42241288700CBD657 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+UnwrappedResolve.swift"; sourceTree = "<group>"; };
+		48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfigurator.swift; sourceTree = "<group>"; };
+		48AB96AC2241397400CBD657 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiImageListViewModel.swift; sourceTree = "<group>"; };
 		518631E03E155C85D73ABFD0 /* Pods-TypiCodeImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.debug.xcconfig"; sourceTree = "<group>"; };
 		69CEDACA3D2103641BC8418F /* Pods-TypiCodeImagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58D9E2185D798BE8624455 /* Pods-TypiCodeImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypiCodeImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,17 +136,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48AB96562240163300CBD657 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B44A36A2365547492117DAB /* Pods_TypiCodeImagesUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132055D3224079AF00DA1DAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				132055D4224079CE00DA1DAB /* NetworkProtocolTests.swift */,
+				132055D72240892800DA1DAB /* TypiImageEndpointTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		132055DA22408E6D00DA1DAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				132055DD2240908C00DA1DAB /* JSONLoaderTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		132055DF2240947400DA1DAB /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				132055E0224094D500DA1DAB /* ApiClient.swift */,
+				48AB96A22241283B00CBD657 /* ApiClientProtocol.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		132055E22241B9B100DA1DAB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				132055E32241BA6000DA1DAB /* ImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		13F4ADCD2240730A00FEF381 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13F4ADCE2240731C00FEF381 /* FileLoader.swift */,
+				13F4ADD0224074E600FEF381 /* sampleImages.json */,
+				487F619E22418211006F9E90 /* sample.png */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		487F619922417C7C006F9E90 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				487F619A22417DA6006F9E90 /* TypiImageDetailViewModel.swift */,
+				487F619C22417E00006F9E90 /* TypiImageDetailViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		487F61A22243DD2F006F9E90 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				487F61A32243DD42006F9E90 /* ImageCacheTests.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		487F61A62243E3A8006F9E90 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				487F61A72243E3BC006F9E90 /* TypiCodeImageErrorTests.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		487F61A92243E520006F9E90 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				487F61AA2243E550006F9E90 /* TypiImageDetailViewModelTests.swift */,
+				487F61B02243EF28006F9E90 /* TypiImageListViewModelTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		48AB96312240163000CBD657 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +234,6 @@
 			children = (
 				48AB963A2240163000CBD657 /* TypiCodeImages.app */,
 				48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */,
-				48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,11 +241,16 @@
 		48AB963C2240163000CBD657 /* TypiCodeImages */ = {
 			isa = PBXGroup;
 			children = (
+				132055E22241B9B100DA1DAB /* Cache */,
+				48AB96A7224136F800CBD657 /* UI */,
+				48AB96A6224136E900CBD657 /* FlowCoordinator */,
+				132055DF2240947400DA1DAB /* ApiClient */,
+				13F4ADCD2240730A00FEF381 /* Utils */,
+				48AB96772240378D00CBD657 /* Resources */,
+				48AB96712240239800CBD657 /* Error */,
+				48AB966C22401AB800CBD657 /* Networking */,
+				48AB966B22401A9900CBD657 /* Model */,
 				48AB963D2240163000CBD657 /* AppDelegate.swift */,
-				48AB963F2240163000CBD657 /* ViewController.swift */,
-				48AB96412240163100CBD657 /* Main.storyboard */,
-				48AB96442240163200CBD657 /* Assets.xcassets */,
-				48AB96462240163200CBD657 /* LaunchScreen.storyboard */,
 				48AB96492240163200CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImages;
@@ -127,7 +259,14 @@
 		48AB96512240163300CBD657 /* TypiCodeImagesTests */ = {
 			isa = PBXGroup;
 			children = (
-				48AB96522240163300CBD657 /* TypiCodeImagesTests.swift */,
+				487F61AD2243EB83006F9E90 /* 771796.png */,
+				487F61A92243E520006F9E90 /* UI */,
+				487F61A62243E3A8006F9E90 /* Error */,
+				487F61A22243DD2F006F9E90 /* Cache */,
+				48AB96A1224127E700CBD657 /* Mocks */,
+				48AB969D224125FE00CBD657 /* ApiClient */,
+				132055DA22408E6D00DA1DAB /* Utils */,
+				132055D3224079AF00DA1DAB /* Network */,
 				48AB96542240163300CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImagesTests;
@@ -140,6 +279,100 @@
 				48AB965F2240163300CBD657 /* Info.plist */,
 			);
 			path = TypiCodeImagesUITests;
+			sourceTree = "<group>";
+		};
+		48AB966B22401A9900CBD657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48AB966D22401B1500CBD657 /* Image.swift */,
+				48AB968722403AFA00CBD657 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48AB966C22401AB800CBD657 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48AB966F22401CB700CBD657 /* NetworkProtocol.swift */,
+				48AB968922403BAD00CBD657 /* MoyaNetworkImplementation.swift */,
+				48AB968B22403D6B00CBD657 /* NetworkUtils.swift */,
+				13F4ADCB22406FF800FEF381 /* TypiImageEndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		48AB96712240239800CBD657 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				48AB9672224023B500CBD657 /* TypiCodeImagesError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		48AB96772240378D00CBD657 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				487F619722417B2D006F9E90 /* LaunchScreen.storyboard */,
+				48AB96442240163200CBD657 /* Images.xcassets */,
+				48AB9678224037A000CBD657 /* Generated */,
+				48AB96822240389200CBD657 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48AB9678224037A000CBD657 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96842240397D00CBD657 /* Images.swift */,
+				48AB96832240397C00CBD657 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		48AB969D224125FE00CBD657 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				48AB969E2241261C00CBD657 /* ApiClientTests.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		48AB96A1224127E700CBD657 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96A42241288700CBD657 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		48AB96A6224136E900CBD657 /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96A82241372300CBD657 /* Container+UnwrappedResolve.swift */,
+				48AB96AA2241374A00CBD657 /* DependencyConfigurator.swift */,
+				48AB96AC2241397400CBD657 /* FlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		48AB96A7224136F800CBD657 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96AE22413AC900CBD657 /* ImageView */,
+				487F619922417C7C006F9E90 /* DetailView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		48AB96AE22413AC900CBD657 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				48AB96B122413AFB00CBD657 /* TypiImageListViewModel.swift */,
+				132055E62241E07800DA1DAB /* TypiImageCollectionViewController.swift */,
+				132055E82241E50A00DA1DAB /* TypiImageCollectionViewCell.swift */,
+				487F61A0224288BC006F9E90 /* TypiImageCollectionViewHeader.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		8E806DB8A4D84B1B99050538 /* Frameworks */ = {
@@ -173,6 +406,9 @@
 			buildConfigurationList = 48AB96622240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImages" */;
 			buildPhases = (
 				777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */,
+				48AB96752240245000CBD657 /* Swiftgen */,
+				48AB96A0224127B600CBD657 /* Cuckoo */,
+				48AB96742240243400CBD657 /* Swiftlint */,
 				48AB96362240163000CBD657 /* Sources */,
 				48AB96372240163000CBD657 /* Frameworks */,
 				48AB96382240163000CBD657 /* Resources */,
@@ -207,26 +443,6 @@
 			productReference = 48AB964E2240163300CBD657 /* TypiCodeImagesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		48AB96582240163300CBD657 /* TypiCodeImagesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */;
-			buildPhases = (
-				75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */,
-				48AB96552240163300CBD657 /* Sources */,
-				48AB96562240163300CBD657 /* Frameworks */,
-				48AB96572240163300CBD657 /* Resources */,
-				06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				48AB965B2240163300CBD657 /* PBXTargetDependency */,
-			);
-			name = TypiCodeImagesUITests;
-			productName = TypiCodeImagesUITests;
-			productReference = 48AB96592240163300CBD657 /* TypiCodeImagesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,10 +457,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					48AB964D2240163300CBD657 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 48AB96392240163000CBD657;
-					};
-					48AB96582240163300CBD657 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 48AB96392240163000CBD657;
 					};
@@ -265,7 +477,6 @@
 			targets = (
 				48AB96392240163000CBD657 /* TypiCodeImages */,
 				48AB964D2240163300CBD657 /* TypiCodeImagesTests */,
-				48AB96582240163300CBD657 /* TypiCodeImagesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,9 +486,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AB96482240163200CBD657 /* LaunchScreen.storyboard in Resources */,
-				48AB96452240163200CBD657 /* Assets.xcassets in Resources */,
-				48AB96432240163100CBD657 /* Main.storyboard in Resources */,
+				48AB96802240389200CBD657 /* Localizable.strings in Resources */,
+				487F619F22418211006F9E90 /* sample.png in Resources */,
+				487F619822417B2D006F9E90 /* LaunchScreen.storyboard in Resources */,
+				13F4ADD1224074E600FEF381 /* sampleImages.json in Resources */,
+				48AB96452240163200CBD657 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,55 +498,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48AB96572240163300CBD657 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				487F61A52243DE2C006F9E90 /* Images.xcassets in Resources */,
+				132055D62240862E00DA1DAB /* sampleImages.json in Resources */,
+				487F61AE2243EB83006F9E90 /* 771796.png in Resources */,
+				132055E52241C3F200DA1DAB /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06B7B9F2A69A9EDA489632AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesUITests/Pods-TypiCodeImagesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		18064C016857A9ED87AE128E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
@@ -342,12 +528,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImagesTests/Pods-TypiCodeImagesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		34D9AC2BC4954648FD131AFC /* [CP] Check Pods Manifest.lock */ = {
@@ -368,23 +556,59 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		75411B5A2127E453C3A7C464 /* [CP] Check Pods Manifest.lock */ = {
+		48AB96742240243400CBD657 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TypiCodeImagesUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		48AB96752240245000CBD657 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/swiftgen.sh\"\n";
+		};
+		48AB96A0224127B600CBD657 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkProtocol.swift\" \\\n\"${INPUT_DIR}/ApiClient/ApiClientProtocol.swift\" \\\n\"${INPUT_DIR}/Cache/ImageCache.swift\"\n";
 		};
 		777D41CF92975173EB3E1176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -410,9 +634,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -424,6 +649,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -433,7 +659,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TypiCodeImages/Pods-TypiCodeImages-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -443,8 +669,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AB96402240163000CBD657 /* ViewController.swift in Sources */,
+				132055E42241BA6000DA1DAB /* ImageCache.swift in Sources */,
+				48AB96862240397D00CBD657 /* Images.swift in Sources */,
+				48AB967022401CB700CBD657 /* NetworkProtocol.swift in Sources */,
+				48AB96B222413AFB00CBD657 /* TypiImageListViewModel.swift in Sources */,
+				132055E92241E50A00DA1DAB /* TypiImageCollectionViewCell.swift in Sources */,
+				48AB968C22403D6B00CBD657 /* NetworkUtils.swift in Sources */,
+				487F619B22417DA6006F9E90 /* TypiImageDetailViewModel.swift in Sources */,
+				48AB966E22401B1500CBD657 /* Image.swift in Sources */,
 				48AB963E2240163000CBD657 /* AppDelegate.swift in Sources */,
+				48AB96852240397D00CBD657 /* Strings.swift in Sources */,
+				48AB96A32241283B00CBD657 /* ApiClientProtocol.swift in Sources */,
+				487F61A1224288BC006F9E90 /* TypiImageCollectionViewHeader.swift in Sources */,
+				48AB968A22403BAD00CBD657 /* MoyaNetworkImplementation.swift in Sources */,
+				48AB96AB2241374A00CBD657 /* DependencyConfigurator.swift in Sources */,
+				48AB96AD2241397400CBD657 /* FlowCoordinator.swift in Sources */,
+				132055E1224094D500DA1DAB /* ApiClient.swift in Sources */,
+				13F4ADCF2240731C00FEF381 /* FileLoader.swift in Sources */,
+				48AB968822403AFA00CBD657 /* Result.swift in Sources */,
+				48AB96A92241372300CBD657 /* Container+UnwrappedResolve.swift in Sources */,
+				487F619D22417E00006F9E90 /* TypiImageDetailViewController.swift in Sources */,
+				13F4ADCC22406FF800FEF381 /* TypiImageEndPoint.swift in Sources */,
+				132055E72241E07800DA1DAB /* TypiImageCollectionViewController.swift in Sources */,
+				48AB9673224023B500CBD657 /* TypiCodeImagesError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,15 +699,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AB96532240163300CBD657 /* TypiCodeImagesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48AB96552240163300CBD657 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48AB965E2240163300CBD657 /* TypiCodeImagesUITests.swift in Sources */,
+				132055DE2240908C00DA1DAB /* JSONLoaderTests.swift in Sources */,
+				487F61AB2243E550006F9E90 /* TypiImageDetailViewModelTests.swift in Sources */,
+				487F61A82243E3BC006F9E90 /* TypiCodeImageErrorTests.swift in Sources */,
+				132055D5224079CE00DA1DAB /* NetworkProtocolTests.swift in Sources */,
+				132055D82240892800DA1DAB /* TypiImageEndpointTests.swift in Sources */,
+				48AB969F2241261C00CBD657 /* ApiClientTests.swift in Sources */,
+				487F61AF2243EC9E006F9E90 /* FileLoader.swift in Sources */,
+				487F61A42243DD42006F9E90 /* ImageCacheTests.swift in Sources */,
+				487F61B12243EF28006F9E90 /* TypiImageListViewModelTests.swift in Sources */,
+				48AB96A52241288700CBD657 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,28 +720,15 @@
 			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
 			targetProxy = 48AB964F2240163300CBD657 /* PBXContainerItemProxy */;
 		};
-		48AB965B2240163300CBD657 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48AB96392240163000CBD657 /* TypiCodeImages */;
-			targetProxy = 48AB965A2240163300CBD657 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48AB96412240163100CBD657 /* Main.storyboard */ = {
+		48AB96822240389200CBD657 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				48AB96422240163100CBD657 /* Base */,
+				48AB96812240389200CBD657 /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		48AB96462240163200CBD657 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48AB96472240163200CBD657 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -621,6 +856,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -639,6 +875,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -658,6 +895,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -679,6 +917,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78MD7CMN6;
 				INFOPLIST_FILE = TypiCodeImagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,46 +929,6 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypiCodeImages.app/TypiCodeImages";
-			};
-			name = Release;
-		};
-		48AB96692240163300CBD657 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4AFC9B3B2660999E5A4656 /* Pods-TypiCodeImagesUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TypiCodeImages;
-			};
-			name = Debug;
-		};
-		48AB966A2240163300CBD657 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C028E5DBC63AE14CC2D190F /* Pods-TypiCodeImagesUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TypiCodeImagesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanwal.TypiCodeImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TypiCodeImages;
 			};
 			name = Release;
 		};
@@ -759,15 +958,6 @@
 			buildConfigurations = (
 				48AB96662240163300CBD657 /* Debug */,
 				48AB96672240163300CBD657 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48AB96682240163300CBD657 /* Build configuration list for PBXNativeTarget "TypiCodeImagesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48AB96692240163300CBD657 /* Debug */,
-				48AB966A2240163300CBD657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
