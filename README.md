@@ -3,12 +3,12 @@ An iOS app challenge to display a list of images download from http://jsonplaceh
 
 ### Project Functionality and assumptions
   - The app sorts the downloaded images into a album based dictionary. On UI each album represents a section and then images are shown under it.
-    ---- add an image here
+    ![List View](/Images/list.png)
 
   - The Collection view on the landing screen has a pull to refresh feature. Upon pulling the app makes a fresh web-service call to download the latest data.
 
   - Tapping on any of the image takes user to the detail view.
-  ---- add an image here
+  ![detail View](/Images/detail.png)
 
   - Its a pretty small application and the data is not mutated throughout the app lifecycle so no datastore is used.
 
